@@ -1,0 +1,5 @@
+<div class="card" [ngClass]= " isEmpty === true ? 'emptyBox' : 'box'">
+  <p>I am box number {{ boxNumber }}.</p><br>
+  <p>I am
+    <span [ngStyle]="{ color: getColor() }"> {{ isEmpty ? "empty" : "full" }} </span></p>
+  </div>
